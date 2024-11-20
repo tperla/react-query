@@ -12,20 +12,22 @@ export default function CarCard({ car, onDelete, onUpdate }: CarCardProps) {
   const [isEditing, setIsEditing] = useState(false);
   const [updatedCar, setUpdatedCar] = useState({ ...car });
 
-  const handleDelete = () => {
-    onDelete(car._id);
-  };
+  // Delete car
+  const handleDelete = () => onDelete(car._id);
 
+  // Toggle edit mode and reset form
   const handleEditToggle = () => {
     setIsEditing(!isEditing);
-    setUpdatedCar({ ...car }); // Reset form to the original values on toggle
+    setUpdatedCar({ ...car });
   };
 
+  // Update the car details on input change
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setUpdatedCar((prevCar) => ({ ...prevCar, [name]: value }));
   };
 
+  // Save the updated car details
   const handleSave = () => {
     onUpdate(updatedCar);
     setIsEditing(false);

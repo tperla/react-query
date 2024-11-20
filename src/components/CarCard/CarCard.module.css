@@ -1,54 +1,68 @@
 .card {
-    border: 1px solid #ccc;
-    padding: 1rem;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-    background-color: #f9f9f9;
-    transition: box-shadow 0.3s ease;
-  }
-  
-  .card:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .editInput {
-    display: block;
-    margin-bottom: 0.5rem;
-    padding: 0.25rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .button {
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin: 5px;
-  }
-  
-  .saveButton {
-    background-color: #4caf50;
-    color: #fff;
-  }
-  
-  .cancelButton {
-    background-color: #f44336;
-    color: #fff;
-  }
-  
-  .editButton {
-    background-color: #007bff;
-    color: #fff;
-  }
-  
-  .deleteButton {
-    background-color: #dc3545;
-    color: #fff;
-  }
-  
-  .button:hover {
-    opacity: 0.9; 
-  }
-  
+  border: 1px solid #e0e0e0; /* Subtle border */
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  background-color: #ffffff; /* Clean white background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Light shadow for depth */
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow on hover */
+  transform: translateY(-4px); /* Subtle lift effect */
+}
+
+.editInput {
+  display: block;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #d0d0d0; /* Subtle input border */
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #f8f9fa; /* Light gray for input background */
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.editInput:focus {
+  border-color: #007bff; /* Highlight input border on focus */
+  background-color: #ffffff;
+  outline: none; /* Remove default outline */
+}
+
+.button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin: 5px;
+}
+
+.saveButton {
+  background-color: #0d6efd; /* Elegant blue */
+  color: #ffffff;
+}
+
+.cancelButton {
+  background-color: #6c757d; /* Neutral gray */
+  color: #ffffff;
+}
+
+.editButton {
+  background-color: #17a2b8; /* Soft cyan */
+  color: #ffffff;
+}
+
+.deleteButton {
+  background-color: #dc3545; /* Classic red */
+  color: #ffffff;
+}
+
+.button:hover {
+  background-color: darken(currentColor, 10%); /* Slightly darken on hover */
+  transform: translateY(-2px); /* Lift button on hover */
+  opacity: 0.95; /* Slight transparency effect */
+}

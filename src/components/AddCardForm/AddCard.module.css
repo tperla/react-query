@@ -1,57 +1,74 @@
 .addCarForm {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 0 0 15px;
-  }
-  
-  .title {
-    margin: 0;
-    font-size: 1.5rem;
-    color: #333;
-  }
-  
-  .inputField {
-    padding: 8px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-  }
-  
-  .buttonContainer {
-    display: flex;
-    gap: 10px;
-    justify-content: space-between;
-  }
-  
-  .addButton {
-    padding: 10px;
-    background-color: #4caf50;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .addButton:hover {
-    background-color: #45a049; /* Darken the button on hover */
-  }
-  
-  .cancelButton {
-    padding: 10px;
-    background-color: #f44336;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .cancelButton:hover {
-    background-color: #e53935; /* Darken the button on hover */
-  }
-  
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 25px;
+  background-color: #ffffff; /* Clean white background */
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow for elegance */
+  margin: 0 0 20px;
+  border: 1px solid #e0e0e0; /* Subtle border for structure */
+}
+
+.title {
+  margin: 0;
+  font-size: 1.8rem; /* Slightly larger font size for prominence */
+  font-weight: 600; /* Bold for emphasis */
+  color: #222831; /* Deep gray for a modern look */
+  text-align: center; /* Centered title for balance */
+}
+
+.inputField {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem; /* Standard, readable font size */
+  background-color: #f8f9fa; /* Light gray for a soft touch */
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.inputField:focus {
+  border-color: #007bff; /* Blue accent for focus */
+  background-color: #ffffff; /* Highlight on focus */
+  outline: none; /* Remove default outline */
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end; /* Align buttons to the right for elegance */
+}
+
+.addButton {
+  padding: 12px 20px;
+  background-color: #007bff; /* Sophisticated blue */
+  color: #ffffff; /* White text for contrast */
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.addButton:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.02); /* Slight zoom for interaction */
+}
+
+.cancelButton {
+  padding: 12px 20px;
+  background-color: #6c757d; /* Neutral gray for a softer tone */
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cancelButton:hover {
+  background-color: #5a6268; /* Darker gray on hover */
+  transform: scale(1.02); /* Slight zoom for interaction */
+}

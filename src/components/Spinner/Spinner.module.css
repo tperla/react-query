@@ -1,25 +1,26 @@
 .spinner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
-  
-  .spinnerCircle {
-    width: 40px;
-    height: 40px;
-    border: 4px solid transparent;
-    border-top: 4px solid #0070f3;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-  }
-  
-  @keyframes spin {
-    0% {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height for better centering */
+  background-color: #f8f9fa; /* Subtle light gray background for a clean look */
+}
+
+.spinnerCircle {
+  width: 50px; /* Slightly larger spinner for visibility */
+  height: 50px;
+  border: 4px solid transparent; /* Transparent border for sleek styling */
+  border-top: 4px solid #6c63ff; /* Elegant purple/blue accent */
+  border-right: 4px solid #7d83ff; /* Gradient effect using multiple colors */
+  border-radius: 50%; /* Circular shape */
+  animation: spin 1.2s cubic-bezier(0.4, 0, 0.2, 1) infinite; /* Smooth spin animation */
+}
+
+@keyframes spin {
+  0% {
       transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
   }
-  
+  100% {
+      transform: rotate(360deg);
+  }
+}
